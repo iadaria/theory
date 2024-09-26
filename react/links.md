@@ -7,3 +7,5 @@ https://ru.react.dev/learn/render-and-commit
 https://habr.com/ru/companies/timeweb/articles/597109/
 
 https://dev.to/balaevarif/pochiemu-react-nie-rieaktivien-40ig
+
+шпаргалка https://my-js.org/docs/cheatsheet/react-hooks/
