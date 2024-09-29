@@ -1,11 +1,12 @@
 'use strict';
 
 function client() {
-  let promise = Promise.resolve();
+  setTimeout(() => alert("timeout"));
 
-  promise.then(() => console.log("promise is resloved"))
-
-  console.log('Code finished')
+  Promise.resolve()
+    .then(() => alert("promise"));
+  
+  alert("code");
 }
 
 client()
