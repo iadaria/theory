@@ -1,12 +1,11 @@
-'use strict';
+const one = () => Promise.resolve('One!');
 
-function client() {
-  setTimeout(() => alert("timeout"));
-
-  Promise.resolve()
-    .then(() => alert("promise"));
-  
-  alert("code");
+async function myFunc() {
+  console.log('In function!');
+  const res = await one();
+  console.log(res);
 }
 
-client()
+console.log('Before functions');
+myFunc();
+console.log('After function!')
