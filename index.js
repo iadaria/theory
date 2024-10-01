@@ -1,15 +1,22 @@
 
 async function client() {
-  const id = Symbol("id");
-  const id2 = Symbol("id");
-  let obj = {
-    [id]: "unique id",
-    name: "daria"
+  let obj = {};
+
+  obj[Symbol.toPrimitive] = function(hint) {
+    console.log('hint', hint);
   }
 
-  let info = Object.getOwnPropertyDescriptor(obj, "name")
+  let user = {
+    name: "Dasha",
+    money: 1000,
+    [Symbol.toPrimitive](hint) {
+      console.log(`hint ${hint}`)
+      return hint == "number" ? this.money : ''
+    }
+  }
 
-  console.log(info)
+  console.log(+user)  
+  console.log(user + 1)
   
 }
 
