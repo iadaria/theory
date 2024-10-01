@@ -4,11 +4,8 @@
 - In other words, actions that we initiate now, but they finish later.
 - Другими словами, действия которые мы начинаем сейчас, а они завершаются позже.
 
-# certain (adj) [sɜːtn] 
 
-0. Определенный, отдельный, конкретный, 
-- adv наверняка, несомненно
-
-# registry [ˈreʤɪstrɪ] noun
-
-0. Реестр
+# Simple words
+- accessor [əkˈsesər] средство доступа, метод SET
+- registry [ˈreʤɪstrɪ] noun Реестр
+- certain (adj) [sɜːtn] Определенный, отдельный, конкретный, 
