@@ -1,3 +1,6 @@
+1. See git from purple school
+
+
 25 - записать на аудио functions
 
 

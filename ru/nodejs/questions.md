@@ -1,0 +1,2 @@
+# 
+- modules: commonjs, es
