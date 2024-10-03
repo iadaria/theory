@@ -189,11 +189,54 @@ let rabbit = new Rabbit("White Rabbit"); //  rabbit.__proto__ == animal
 
 rabbit.eats; // true
 ```
-[Установка Rabbit.prototype = animal буквально говорит интерпретатору следующее: "При создании объекта через new Rabbit() запиши ему animal в [[Prototype]]".]
-```js
-```
+[Установка Rabbit.prototype = animal буквально говорит интерпретатору следующее: "При создании объекта через new Rabbit() запиши ему animal в [[Prototype]]".\
+Горизонтальная стрелка, обозначающая обычное свойство для "F"]
+![](../../../_img/proto-constructor-animal-rabbit.svg)
 
+- ! `F.prototype` используется только в момент вызова new `F`
+- У каждой функции (за исключением стрелочных) по умолчанию уже есть свойство "prototype".
+- По умолчанию "prototype" – объект с единственным свойством `constructor`, которое ссылается на функцию-конструктор.
 ```js
+function Rabbit() {}
+/* прототип по умолчанию
+Rabbit.prototype = { constructor: Rabbit };
+*/
+// Let's check it
+Rabbit.prototype.constructor == Rabbit; // true
+// Если ничего не меняем и оставляем все
+let rabbit = new Rabbit(); // наследует от {constructor: Rabbit}
+rabbit.constructor == Rabbit; // true (свойство получено из прототипа)
+// Можем создать новый объект
+let rabbit2 = new rabbit.constructor("Black Rabbit");
+```
+![](../../../_img/function-prototype-constructor.svg)
+
+Самое важное о свойстве "constructor":\
+! __JavaScript сам по себе не гарантирует правильное значение свойства `constructor`.__
+
+[Например, если мы заменим прототип по умолчанию на другой объект, то свойства "constructor" в нём не будет]
+
+Чтобы сохранить верное свойство "constructor", мы должны добавлять/удалять/изменять свойства у прототипа по умолчанию вместо того, чтобы перезаписывать его целиком.ё
+Или мы можем заново создать свойство `constructor`.
+```js
+function Rabbit() {}
+Rabbit.prototype = {
+  jumps: true
+};
+
+let rabbit = new Rabbit();
+alert(rabbit.constructor === Rabbit); // false
+// А нужно было
+function Rabbit() {}
+// Не перезаписываем Rabbit.prototype полностью,
+// а добавляем к нему свойство
+Rabbit.prototype.jumps = true
+// Прототип по умолчанию сохраняется, и мы всё ещё имеем доступ к Rabbit.prototype.constructor
+// Или
+Rabbit.prototype = {
+  jumps: true,
+  constructor: Rabbit
+};
 ```
 
 ```js
