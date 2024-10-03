@@ -241,6 +241,3 @@ Rabbit.prototype = {
 
 ```js
 ```
-
-```js
-```
