@@ -46,7 +46,37 @@ Cases:
 Переходить, приступить, продолжаться
 - And then it proceeds with the result / И затем переходит к получению результата.
 
+### to execute  /ˈek.sɪ.kjuːt/
+
+1. [transitive] requires a direct object:
+- The software executed the command flawlessly
+- The officer was ordered to execute the plan immediately("execute" is acting on the object "the plan").
+2. [intransitive] does not require a direct object, no direct object:
+- After several attempts, the process finally executed(the action of "executing" is completed by the subject itself).
+- The program failed to execute due to(из-за) a missing file(the focus is on the program performing the action itself) / Программу не удалось выполнить из-за отсутствия файла
+
+### to call
+- вызов
+- призывать, звонить, вызвать, называть, именовать, требовать, обратиться
+![transitive] requires a direct object:
+- *Then 'await' waits until one of them is called* / Затем 'await' ждет, пока один из них не будет вызван.
+- It is called 'name' / Это называется 'name'
+- I waited to be called up / Я ждал призыва
+
+### to proceed /prəˈsiːd/
+- to continue as planned
+- to move forward or travel in a particular direction
+- to start or continue an action or process
+[intransitive]
+- *Then await waits until one of them is called and then proceeds with the result* / Затем await ждет, пока один из них не будет вызван, а затем переходит к получению результату.\
+[It describes an action that happens on its own (the action of continuing or moving forward), without directly acting upon something else.\
+The phrase `with the result` acts as a prepositional phrase, not as a direct object of the verb.]
+
 # Simple words
 - accessor [əkˈsesər] средство доступа, метод SET
 - registry [ˈreʤɪstrɪ] noun Реестр
 - certain (adj) [sɜːtn] Определенный, отдельный, конкретный, 
+
+# Simple phrases
+- with the result (adv) с тем результатом
+[...we can't do anything with the result / ...мы ничего не можем поделать с результатом]
