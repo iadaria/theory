@@ -49,9 +49,11 @@ Cases:
 ### to execute  /ˈek.sɪ.kjuːt/
 
 1. [transitive] requires a direct object:
+- *The script is executed “asynchronously”* / Скрипт выполняется «асинхронно».
 - The software executed the command flawlessly
 - The officer was ordered to execute the plan immediately("execute" is acting on the object "the plan").
-2. [intransitive] does not require a direct object, no direct object:
+1. [intransitive] does not require a direct object, no direct object:
+- *Let’s add a callback function as a second argument to 'loadScript' that should execute when the script loads* / Добавим в качестве второго аргумента 'loadScript' функцию обратного вызова, которая должна выполняться! при загрузке скрипта.
 - After several attempts, the process finally executed(the action of "executing" is completed by the subject itself).
 - The program failed to execute due to(из-за) a missing file(the focus is on the program performing the action itself) / Программу не удалось выполнить из-за отсутствия файла
 
@@ -60,14 +62,17 @@ Cases:
 - призывать, звонить, вызвать, называть, именовать, требовать, обратиться
 ![transitive] requires a direct object:
 - *Then 'await' waits until one of them is called* / Затем 'await' ждет, пока один из них не будет вызван.
-- It is called 'name' / Это называется 'name'
-- I waited to be called up / Я ждал призыва
+- *That’s called a “callback-based” style of asynchronous programming* / Это так называемый «callback-based» стиль асинхронного программирования.
+- *It’s called the "error-first callback" style* / Это называется стилем «обратный вызов при ошибке».
+- *Then "callback(err)" is called* / Затем вызывается «callback(err)».
+- *That’s sometimes called “callback hell” or “pyramid of doom”*
+- I waited to be called up / Я ждал призыва.
 
 ### to proceed /prəˈsiːd/
 - to continue as planned
 - to move forward or travel in a particular direction
 - to start or continue an action or process
-[intransitive]
+![intransitive]
 - *Then await waits until one of them is called and then proceeds with the result* / Затем await ждет, пока один из них не будет вызван, а затем переходит к получению результату.\
 [It describes an action that happens on its own (the action of continuing or moving forward), without directly acting upon something else.\
 The phrase `with the result` acts as a prepositional phrase, not as a direct object of the verb.]
