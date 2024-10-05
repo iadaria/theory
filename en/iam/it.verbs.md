@@ -3,30 +3,31 @@
 - In other words, actions that we initiate now, but they finish later.
 - Другими словами, действия которые мы начинаем сейчас, а они завершаются позже.
 
-### to accept  /əkˈsept/ 
+## to accept  /əkˈsept/ 
 1. to agree to take something
  - Do you accept credit cards? Вы принимаете кредитные карты?
  - I offered her an apology, but she wouldn't accept it / Я предложил ей извиниться, но она не приняла извинения.
  - The new coffee machines will accept coins of any denomination.
+  
 Cases:
 - `await` accepts `thenables`
 - Here's `Thenable` class; the `await` accepts its instances.
 
-### to allow
+## to allow
 - `await` allows us to use thenable objects(those with a callable `then` method).
 - ...that allow you to schedule asynchronous actions.
 
-### to support
+## to support
 - If it supports `.then`, that's enough to use it with `await`
 
-### to gather
+## to gather
 
-### allow vs accept
+## allow vs accept
 Основное отличие между словами `allow` и `accept` заключается в следующем:
 - «allow» — это согласие, разрешение;
 - «accept» — это получение по собственному желанию чего-либо, данного или предложенного.
 
-### to provide [prəˈvaɪd]
+## to provide [prəˈvaɪd]
 0. to give someone something that they need:
 1. !(v) обеспечивать, снабжать, предусматривать
 2. ![transitive] have an object
@@ -53,13 +54,14 @@ Cases:
 - The software executed the command flawlessly
 - The officer was ordered to execute the plan immediately("execute" is acting on the object "the plan").
 1. [intransitive] does not require a direct object, no direct object:
-- *Let’s add a callback function as a second argument to 'loadScript' that should execute when the script loads* / Добавим в качестве второго аргумента 'loadScript' функцию обратного вызова, которая должна выполняться! при загрузке скрипта.
+- *Let’s add a callback function as a second argument to 'loadScript' that should execute when the script loads* / Добавим в качестве второго аргумента 'loadScript' функцию обратного вызова, которая должна !выполняться! при загрузке скрипта.
 - After several attempts, the process finally executed(the action of "executing" is completed by the subject itself).
 - The program failed to execute due to(из-за) a missing file(the focus is on the program performing the action itself) / Программу не удалось выполнить из-за отсутствия файла
 
 ### to call
 - вызов
 - призывать, звонить, вызвать, называть, именовать, требовать, обратиться
+
 ![transitive] requires a direct object:
 - *Then 'await' waits until one of them is called* / Затем 'await' ждет, пока один из них не будет вызван.
 - *That’s called a “callback-based” style of asynchronous programming* / Это так называемый «callback-based» стиль асинхронного программирования.
@@ -72,10 +74,23 @@ Cases:
 - to continue as planned
 - to move forward or travel in a particular direction
 - to start or continue an action or process
+
 ![intransitive]
 - *Then await waits until one of them is called and then proceeds with the result* / Затем await ждет, пока один из них не будет вызван, а затем переходит к получению результату.\
 [It describes an action that happens on its own (the action of continuing or moving forward), without directly acting upon something else.\
 The phrase `with the result` acts as a prepositional phrase, not as a direct object of the verb.]
+
+### to prepend [with]  /prɪˈpend/
+- Добавлять
+- to add something to the beginning of something else, especially a piece of data (= information) to the beginning of a computer instruction.
+  
+[transitive]
+- *To declare [an 'async' class method], just prepend [it] [with 'async']* / Чтобы объявить метод класса 'async', просто добавьте к нему 'async'.
+
+### to ensure /ɪnˈʃɔːr/  /ɪnˈʃʊr/
+Гарантирует
+
+### to declare  /dɪˈkleər/
 
 # Simple words
 - accessor [əkˈsesər] средство доступа, метод SET
