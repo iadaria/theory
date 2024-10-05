@@ -43,11 +43,11 @@ Cases:
 - Use "provide to" when focusing on who receives the item.
 - Use "provide for" when focusing on why the item is being given (for someone’s benefit).
 
-### proceed [prəˈsiːd]
+## proceed [prəˈsiːd]
 Переходить, приступить, продолжаться
 - And then it proceeds with the result / И затем переходит к получению результата.
 
-### to execute  /ˈek.sɪ.kjuːt/
+## to execute  /ˈek.sɪ.kjuːt/
 
 1. [transitive] requires a direct object:
 - *The script is executed “asynchronously”* / Скрипт выполняется «асинхронно».
@@ -58,7 +58,7 @@ Cases:
 - After several attempts, the process finally executed(the action of "executing" is completed by the subject itself).
 - The program failed to execute due to(из-за) a missing file(the focus is on the program performing the action itself) / Программу не удалось выполнить из-за отсутствия файла
 
-### to call
+## to call
 - вызов
 - призывать, звонить, вызвать, называть, именовать, требовать, обратиться
 
@@ -70,7 +70,7 @@ Cases:
 - *That’s sometimes called “callback hell” or “pyramid of doom”*
 - I waited to be called up / Я ждал призыва.
 
-### to proceed /prəˈsiːd/
+## to proceed /prəˈsiːd/
 - to continue as planned
 - to move forward or travel in a particular direction
 - to start or continue an action or process
@@ -80,23 +80,60 @@ Cases:
 [It describes an action that happens on its own (the action of continuing or moving forward), without directly acting upon something else.\
 The phrase `with the result` acts as a prepositional phrase, not as a direct object of the verb.]
 
-### to prepend [with]  /prɪˈpend/
+## to prepend [with]  /prɪˈpend/
+(to add something to the beginning of something else, especially a piece of data (= information) to the beginning of a computer instruction.0
 - Добавлять
-- to add something to the beginning of something else, especially a piece of data (= information) to the beginning of a computer instruction.
   
 [transitive]
 - *To declare [an 'async' class method], just prepend [it] [with 'async']* / Чтобы объявить метод класса 'async', просто добавьте к нему 'async'.
 
-### to ensure /ɪnˈʃɔːr/  /ɪnˈʃʊr/
+## to ensure /ɪnˈʃɔːr/  /ɪnˈʃʊr/
 Гарантирует
 
-### to declare  /dɪˈkleər/
+## to declare  /dɪˈkleər/
+
+## to enable  /ɪˈneɪ.bəl/
+- включить, давать возможность, активировать, задействовать
+- to make someone able to do something, or to make something possible
+
+![transitive]:
+- *It enables ['await'] (what?)* / Он позволяет использовать 'await'.
+
+## to resolve  /rɪˈzɒlv/
+(to solve or end a problem or difficulty)
+- разрешить, решить, разрешать, решаться, устранять
+- решимость, решительность
+
+[transitive]:
+- I'm gonna go and resolve [it] (resolve what?) / Я собираюсь пойти и решить эту проблему.
+
+[intransitive]:
+- *If a promise resolves normally, then 'await promise' returns the result.* / Если промис разрешается нормально, то 'await promise' возвращает результат.
+
+## to return
+(to come or go back to a previous place)\
+(if people or things return to a previous condition, they go back to that condition)
+
+[transitive]:
+-  *It returns the result* / Он возвращает результат.
+
+## to throw  /θrəʊ/
+(to send something through the air with force, especially by a sudden movement of the arm)
+- бросать, кидать
+- бросок
+
+[transitive]:
+- *It throws the error, just as if there were a throw statement at that line.* (throws what?)
 
 # Simple words
 - accessor [əkˈsesər] средство доступа, метод SET
 - registry [ˈreʤɪstrɪ] noun Реестр
 - certain (adj) [sɜːtn] Определенный, отдельный, конкретный, 
+- throw statement - оператор throw, инструкция throw
 
 # Simple phrases
 - with the result (adv) с тем результатом
 [...we can't do anything with the result / ...мы ничего не можем поделать с результатом]
+
+#
+- thus (noun) таким образом (союз) итак, поэтому (adv) так, при этом

@@ -1,3 +1,10 @@
+Interview:
+- Typescript
+- Typescript questions
+- CORS
+- React questions
+
+NodeJS
 1. See git from purple school
 
 
