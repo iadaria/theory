@@ -135,7 +135,7 @@ let clone = Object.create(Object.getPrototypeOf(obj), Object.getOwnPropertyDescr
 
 ### "Простейший" объект
 
-`Object.create(null)` создаёт пустой объект без прототипа (`[[Prototype]]` будет `null`).\
+`Object.create(null)` создаёт пустой объект без прототипа (`[[Prototype]]` будет `null`). Такие объекты можно использовать как «чистые словари», у них нет проблем с использованием строки `__proto__` в качестве ключа.\
 Недостаток в том, что у таких объектов не будет встроенных методов объекта, таких как `toString`.\
 [Обратите внимание, что большинство методов, связанных с объектами, имеют вид `Object.something(...)`. К примеру, `Object.keys(obj)`. Подобные методы не находятся в прототипе, так что они продолжат работать для таких объектов.]
 ```js
@@ -144,11 +144,16 @@ let obj = Object.create(null);
 let key = prompt("What's the key?", "__proto__");
 obj[key] = "some value";
 
-alert(obj[key]); // "some value"
+obj[key]; // "some value"
 alert(obj); // Ошибка (no toString)
-lert(Object.keys(chineseDictionary)); // hello,bye
+Object.keys(chineseDictionary); // hello,bye
 ```
-
+Ещё методы:
+- `Object.keys(obj) / Object.values(obj) / Object.entries(obj)` – возвращают массив всех перечисляемых !собственных! строковых ключей/значений/пар ключ-значение.
+- `Object.getOwnPropertySymbols(obj)` – возвращает массив всех собственных символьных ключей.
+- `Object.getOwnPropertyNames(obj)` – возвращает массив всех собственных строковых ключей.
+- `Reflect.ownKeys(obj)` – возвращает массив всех собственных ключей.
+- `obj.hasOwnProperty(key)`: возвращает `true`, если у `obj` есть собственное (не унаследованное) свойство с именем `key`.
 
 ```js
 ```

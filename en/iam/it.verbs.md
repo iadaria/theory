@@ -81,7 +81,7 @@ Cases:
 The phrase `with the result` acts as a prepositional phrase, not as a direct object of the verb.]
 
 ## to prepend [with]  /prɪˈpend/
-(to add something to the beginning of something else, especially a piece of data (= information) to the beginning of a computer instruction.0
+(to add something to the beginning of something else, especially a piece of data (= information) to the beginning of a computer instruction.)
 - Добавлять
   
 [transitive]
@@ -92,7 +92,7 @@ The phrase `with the result` acts as a prepositional phrase, not as a direct obj
 
 ## to declare  /dɪˈkleər/
 
-## to enable  /ɪˈneɪ.bəl/
+## to enable  /ɪˈneɪ.bəl/ 
 - включить, давать возможность, активировать, задействовать
 - to make someone able to do something, or to make something possible
 
@@ -117,6 +117,10 @@ The phrase `with the result` acts as a prepositional phrase, not as a direct obj
 [transitive]:
 -  *It returns the result* / Он возвращает результат.
 
+[intransitive]:
+- I returned from the country this morning / Сегодня утром я вернулся из деревни.
+- An hour afterwards they returned / Через час после этого они вернулись.
+
 ## to throw  /θrəʊ/
 (to send something through the air with force, especially by a sudden movement of the arm)
 - бросать, кидать
@@ -124,6 +128,10 @@ The phrase `with the result` acts as a prepositional phrase, not as a direct obj
 
 [transitive]:
 - *It throws the error, just as if there were a throw statement at that line.* (throws what?)
+
+## to append
+(add something to the end of a written document or piece of writing)
+- *We can append '.catch' to handle it* / Мы можем добавить '.catch', чтобы обработать его.
 
 # Simple words
 - accessor [əkˈsesər] средство доступа, метод SET
