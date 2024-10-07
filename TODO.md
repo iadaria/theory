@@ -1,3 +1,7 @@
+Rsschool:
+- don't forget add node version
+- what about package.lock.json
+
 Interview:
 - Typescript
 - Typescript questions

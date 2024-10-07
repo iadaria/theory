@@ -1,3 +1,6 @@
+rsschool en: https://docs.rs.school/#/en/code-of-conduct
+rsscholl ru: https://docs.rs.school/#/
+
 Трансляторы: https://dzen.ru/a/ZO2xgrw79jwuh6jT?ysclid=m1112bezpp684480423
 
 event-loop в деталях https://habr.com/ru/articles/762618/
