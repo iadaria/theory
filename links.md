@@ -1,3 +1,9 @@
+submit to link: https://www.bing.com/search?q=git+how+to+submit+link+to+your+PR&PC=U316&FORM=CHROMN
+
+nodejs doc: https://www.geeksforgeeks.org/node-js-fs-open-method/
+
+why node:fs https://stackoverflow.com/questions/67554506/what-are-the-nodefs-nodepath-etc-modules
+
 rsschool en: https://docs.rs.school/#/en/code-of-conduct
 rsscholl ru: https://docs.rs.school/#/
 
