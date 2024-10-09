@@ -100,6 +100,183 @@ alert(User); // class User { ... }
 2. Методы класса являются неперечислимыми. Определение класса устанавливает флаг enumerable в false для всех методов в "prototype".\
 И это хорошо, так как если мы проходимся циклом for..in по объекту, то обычно мы не хотим при этом получать методы класса.
 3. Классы всегда используют `use strict`. Весь код внутри класса автоматически находится в строгом режиме.
+
+## Class Expression
+
+Как и функции, классы можно определять внутри другого выражения, передавать, возвращать, присваивать и т.д.\
+Если у `Class Expression` есть имя, то оно видно только внутри класса:
+```js
+// Class Expression (по аналогии с Function Expression):
+let User = class {
+  sayHi() {
+    alert("Привет");
+  }
+};
+// "Named Class Expression"
+// (в спецификации нет такого термина, но происходящее похоже на Named Function Expression)
+let User = class MyClass {
+  sayHi() {
+    alert(MyClass); // имя MyClass видно только внутри класса
+  }
+};
+
+new User().sayHi(); // работает, выводит определение MyClass
+
+alert(MyClass); // ошибка, имя MyClass не видно за пределами класса
+```
+Мы даже можем динамически создавать классы «по запросу»:
+```js
+function makeClass(phrase) {
+  // объявляем класс и возвращаем его
+  return class {
+    sayHi() {
+      alert(phrase);
+    };
+  };
+}
+// Создаём новый класс
+let User = makeClass("Привет");
+
+new User().sayHi(); // Привет
+```
+## Геттеры/сеттеры, другие сокращения
+
+Как и в литеральных объектах, в классах можно объявлять вычисляемые свойства, геттеры/сеттеры и т.д.
+```js
+class User {
+  // Свойства, новая возможность
+  age = 34;
+  constructor(name) {
+    // вызывает сеттер
+    this.name = name;
+  }
+  get name() {
+    return this._name;
+  }
+  set name(value) {
+    if (value.length < 4) {
+      alert("Имя слишком короткое.");
+      return;
+    }
+    this._name = value;
+  }
+  ['say' + 'Hi2']() {
+    alert("Привет");
+  }
+}
+
+let user = new User("Иван");
+alert(user.name); // Иван
+
+user = new User(""); // Имя слишком короткое.
+user.sayHi2();
+```
+При объявлении класса геттеры/сеттеры создаются на `User.prototype`, вот так:
+```js
+Object.defineProperties(User.prototype, {
+  name: {
+    get() {
+      return this._name
+    },
+    set(name) {
+      // ...
+    }
+  }
+});
+```
+# Наследование классов
+
+Наследование классов – это способ расширения одного класса другим классом.
+
+## Ключевое слово «extends»
+```js
+class Rabbit extends Animal {
+  hide() {
+    alert(`${this.name} прячется!`);
+  }
+}
+let rabbit = new Rabbit("Белый кролик");
+rabbit.run(5); // Белый кролик бежит со скоростью 5.
+rabbit.hide(); // Белый кролик прячется!
+```
+Внутри ключевое слово extends работает по старой доброй механике прототипов. Оно устанавливает `Rabbit.prototype.[[Prototype]]` в `Animal.prototype`. Таким образом, если метода не оказалось в `Rabbit.prototype`, JavaScript берет его из `Animal.prototype`.
+
+![](../../../_img/animal-rabbit-extends.svg)
+
+Например, чтобы найти метод rabbit.run, движок проверяет (снизу вверх на картинке):
+1. Объект `rabbit` (не имеет run).
+2. Его прототип, то есть `Rabbit.prototype` (имеет `hide`, но не имеет `run`).
+3. Его прототип, то есть (вследствие `extends`) `Animal.prototype`, в котором, наконец, есть метод `run`.
+4 При обращении к `super` стрелочной функции он берётся из внешней функции.
+Синтаксис создания класса допускает указывать после extends не только класс, но и любое выражение.
+```js
+function f(phrase) {
+  return class {
+    sayHi() { alert(phrase); }
+  };
+}
+class User extends f("Привет") {}
+new User().sayHi(); // Привет
+```
+
+## Переопределение методов
+- `super.method(...)` вызывает родительский метод.
+- `super(...)` для вызова родительского конструктора (работает только внутри нашего конструктора).
+```js
+class Rabbit extends Animal {
+  stop() {
+    // ...теперь это будет использоваться для rabbit.stop()
+    // вместо stop() из класса Animal
+  }
+}
+```
+## Переопределение конструктора
+
+Согласно спецификации, если класс расширяет другой класс и не имеет конструктора, то автоматически создаётся такой «пустой» конструктор:\
+[Как мы видим, он просто вызывает конструктор родительского класса. Так будет происходить, пока мы не создадим собственный конструктор.]
+```js
+class Rabbit extends Animal {
+  // генерируется для классов-потомков, у которых нет своего конструктора
+  constructor(...args) {
+    super(...args);
+  }
+}
+```
+! *Конструкторы в наследуемых классах должны обязательно вызывать super(...), и (!) делать это перед использованием this.*
+
+... Нужно дополнить
+```js
+class Animal {
+  constructor(name) {
+    this.speed = 0;
+    this.name = name;
+  }
+  // ...
+}
+class Rabbit extends Animal {
+  constructor(name, earLength) {
+    this.speed = 0;
+    this.name = name;
+    this.earLength = earLength;
+  }
+  // ...
+}
+// Не работает!
+let rabbit = new Rabbit("Белый кролик", 10); // Error: this is not defined.
+// Должно быть
+class Rabbit extends Animal {
+  constructor(name, earLength) {
+    super(name);
+    this.earLength = earLength;
+  }
+  // ...
+}
+
+```
+
+```js
+```
+
 ```js
 ```
 
