@@ -139,13 +139,73 @@ coffeeMachine.#waterLimit = 1000; // Error
 - Но встроенные классы – исключение. Они не наследуют статические методы друг друга.
 
 ... Дописать
-```js
-```
 
-```js
-```
+# Проверка класса: "instanceof"
 
+Оператор `instanceof` позволяет проверить, принадлежит ли объект указанному классу, с учётом наследования.\
+Оператор вернёт true, если obj принадлежит классу Class или наследующему от него.
+
+... нужно продолжить
 ```js
+obj instanceof Class
+```
+```js
+class Rabbit {}
+let rabbit = new Rabbit();
+// это объект класса Rabbit?
+alert( rabbit instanceof Rabbit ); // true
+// вместо класса
+function Rabbit() {}
+alert( new Rabbit() instanceof Rabbit ); // true
+
+let arr = [1, 2, 3];
+alert( arr instanceof Array ); // true
+alert( arr instanceof Object ); // true
+
+
+class Animal {}
+class Rabbit extends Animal {}
+
+let rabbit = new Rabbit();
+alert(rabbit instanceof Animal); // true
+// rabbit.__proto__ === Animal.prototype (нет совпадения)
+// rabbit.__proto__.__proto__ === Animal.prototype (совпадение!)
+```
+## Примеси
+
+В JavaScript можно наследовать только от одного объекта. Объект имеет единственный `[[Prototype]]`. И класс может расширить только один другой класс.\
+примесь – это класс, методы которого предназначены для использования в других классах, причём без наследования от примеси.
+
+Простейший способ реализовать примесь в JavaScript – это создать объект с полезными методами, которые затем могут быть легко добавлены в прототип любого класса.\
+[Это не наследование, а просто копирование методов. Таким образом, класс User может наследовать от другого класса, но при этом также включать в себя примеси, «подмешивающие» другие методы, например:]
+- Примеси могут наследовать друг друга.
+
+...не закончено
+```js
+// примесь
+let sayHiMixin = {
+  sayHi() {
+    alert(`Привет, ${this.name}`);
+  },
+  sayBye() {
+    alert(`Пока, ${this.name}`);
+  }
+};
+// использование:
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+}
+// копируем методы
+Object.assign(User.prototype, sayHiMixin);
+// теперь User может сказать Привет
+new User("Вася").sayHi(); // Привет, Вася!
+
+class User extends Person {
+// ...
+}
+Object.assign(User.prototype, sayHiMixin);
 ```
 
 ```js
