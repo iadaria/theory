@@ -1,3 +1,17 @@
+Rsschool:
+- don't forget add node version
+- what about package.lock.json
+
+Interview:
+- Typescript
+- Typescript questions
+- CORS
+- React questions
+
+NodeJS
+1. See git from purple school
+
+
 25 - записать на аудио functions
 
 
