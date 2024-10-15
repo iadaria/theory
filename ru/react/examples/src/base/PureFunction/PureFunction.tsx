@@ -9,6 +9,8 @@ export function PureFunction() {
 			<GoodVar />
 		</>
 	);
-	const ex2 = <MutateSimpleVariable />
-	return <MutateSimpleVariable />
+	//const ex2 = <MutateSimpleVariable />
+	//return <MutateSimpleVariable />
+
+	return ex1;
 }
