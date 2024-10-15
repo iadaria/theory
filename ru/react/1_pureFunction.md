@@ -92,7 +92,7 @@ export default function TeaSet() {
 - *Однако совершенно нормально изменять переменны/объекты, которые вы только что создали во время рендеринга.*
 
 [Ex2] Пример мутирования созданной переменной
-```ts
+```tsx
 export default function TeaGathering() {
     let cups = [];
     for (let i = 1; i <= 10; i++) {
@@ -102,16 +102,13 @@ export default function TeaGathering() {
 }
 ```
 
-```ts
+```tsx
+```
+```tsx
 ```
 
-```ts
-```
-```ts
+```tsx
 ```
 
-```ts
-```
-
-```ts
+```tsx
 ```

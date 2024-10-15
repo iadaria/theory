@@ -1,3 +1,10 @@
 {
-  "cSpell.ignoreWords": ["Thenables"]
+  "cSpell.ignoreWords": [
+    "Thenables"
+  ],
+  "cSpell.words": [
+    "Иммутабельный",
+    "межсайтовые",
+    "преобразуя"
+  ]
 }
