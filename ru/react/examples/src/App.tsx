@@ -1,8 +1,6 @@
 
 import './App.css';
-import { PureFunction } from './base/pureFunction';
-
-
+import { PureFunction } from './base/PureFunction';
 
 function App() {
   return <PureFunction />;
