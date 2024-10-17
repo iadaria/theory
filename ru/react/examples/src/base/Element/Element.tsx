@@ -1,13 +1,8 @@
-import { useEffect } from "react";
-import { ex0_4_Tick } from "./ex0_4_Tick";
-
+import { ShowTickButton } from "./ex0_4_Tick";
 
 export function Element() {
-    useEffect(() => {
-        let timeId = setInterval(ex0_4_Tick, 1000);
-        return () => clearInterval(timeId)
-    }, []);
 
+    let example = <ShowTickButton />
 
-    return null;
+    return example;
 }

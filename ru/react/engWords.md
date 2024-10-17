@@ -11,3 +11,5 @@ Babel /ˈbeɪ.bəl/
 component [kəmˈpəʊnənt]
 
 element [ˈelɪmənt]
+
+lifecycle /ˈlaɪf ˌsaɪ.kəl/
