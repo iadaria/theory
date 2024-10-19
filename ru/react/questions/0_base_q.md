@@ -49,8 +49,16 @@ ReactDOM.render(<Clock />, document / getElementById("root"));
 
 ```tsx
 function Clock(props) {
-  const [date, setDate] = useState()
+  const [date, setDate] = useState(new Date());
 
+  function tick() {
+    setDate(new Date());
+  }
+
+  useEffect(() => {
+    let timerId = setInterval(tick, 1000);
+    return () => clearInterval(timerId);
+  }, []);
   return (
     <div>
       <h1>Привет, мир!</h1>
