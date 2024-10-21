@@ -1,5 +1,6 @@
 import { FormWithOriginStates } from "./Ex0_10_Form";
 import { Ex0_11_Managed } from "./Ex0_11_Managed";
+import { Lazy } from "./Ex0_14_Lazy";
 import { ShowTickButton } from "./ex0_4_Tick";
 import { Clock } from "./ex0_5_Tick";
 import { Ex0_7_Form } from "./ex0_7_Form";
@@ -18,6 +19,8 @@ export function Element() {
     example = <FormWithOriginStates />
 
     example = <Ex0_11_Managed />
+
+    example = <Lazy />
 
     return example;
 }
