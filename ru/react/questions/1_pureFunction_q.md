@@ -71,9 +71,33 @@ export default function TeaSet() {
 
 Ответ: для проверки не нарушено ли правило 1 чистой функции. 
 
+# Вопрос 5
+Этот компонент пытается установить CSS-класс <h1> на night в период с полуночи до шести часов утра, и на day во все остальное время. Однако это не срабатывает. Можете ли вы исправить этот компонент?\
+Рендеринг — это вычисление, он не должен пытаться "делать" вещи. Можете ли вы выразить ту же идею по-другому?
 ```tsx
+export default function Clock({ time }) {
+    let hours = time.getHours();
+    if (hours >= 0 && hours <= 6) {
+        document.getElementById('time').className = 'night';
+    } else {
+        document.getElementById('time').className = 'day';
+    }
+    return <h1 id="time">{time.toLocaleTimeString()}</h1>;
+}
 ```
+
+Ответ:
+Наш компонент должен быть чистой функцией и производить только вычисления, а побочные эффекты не должны происходить во время рендеринга. И мы здесь это нарушаем, мы выполняем побочный эффект( изменение DOМ) в примере выше. В примере ниже - только вычисление и возврат JSX.
 ```tsx
+export default function Clock({ time }) {
+    let hours = time.getHours();
+    let className = hours >= 0 && hours <= 6 ? 'night' : 'day';
+    return (
+        <h1 className={className}>
+            {time.toLocaleTimeString()}
+        </h1>
+    );
+}
 ```
 
 ```tsx

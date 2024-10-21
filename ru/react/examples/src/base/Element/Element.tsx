@@ -5,6 +5,8 @@ import { ShowTickButton } from "./ex0_4_Tick";
 import { Clock } from "./ex0_5_Tick";
 import { Ex0_7_Form } from "./ex0_7_Form";
 import { NumberList } from "./ex0_9_List";
+import FixClock from "./FixClock";
+import MutableLocalVariable from "./MutableLocalVariable";
 
 export function Element() {
 
@@ -22,5 +24,8 @@ export function Element() {
 
     example = <Lazy />
 
+    example = <MutableLocalVariable />
+
+    example = <FixClock time={new Date()} />
     return example;
 }

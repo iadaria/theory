@@ -33,3 +33,13 @@ code {
   outline: none;
   box-shadow: 0 0 0 4px #cbd6ee;
 }
+
+.night {
+  background: black;
+  color: white;
+}
+
+.day {
+  background: white;
+  color: black;
+}
