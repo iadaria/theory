@@ -36,3 +36,9 @@ export default function PageWithContextTwo() {
 		</Section>
 	);
 }
+
+/**
+ * Теперь и Heading, и Section читают LevelContext, чтобы определить, 
+ * насколько "глубоко" они находятся. А Section оборачивает свои 
+ * дочерние компоненты в LevelContext.
+ */
