@@ -1,3 +1,8 @@
+https://reactdev-ru.pages.dev/learn/passing-data-deeply-with-context/#context-an-alternative-to-passing-props
+
+
+https://reactdev-ru.pages.dev/learn/scaling-up-with-reducer-and-context/
+
 # Контекст React
 Контекст позволяет передавать данные через дерево компонентов без необходимости передавать пропсы на промежуточных уровнях избегая "prop drilling"(бурение пропсами).\
 Контекст это альтернатива передачи props.\
