@@ -1,0 +1,1 @@
+export { PureFunction } from './PureFunction';
