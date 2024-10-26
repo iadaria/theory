@@ -4,6 +4,7 @@ https://reactdev-ru.pages.dev/learn/passing-data-deeply-with-context/#context-an
 https://reactdev-ru.pages.dev/learn/scaling-up-with-reducer-and-context/
 
 # Контекст React
+
 Контекст позволяет передавать данные через дерево компонентов без необходимости передавать пропсы на промежуточных уровнях избегая "prop drilling"(бурение пропсами).\
 Контекст это альтернатива передачи props.\
 Контекст позволяет родительскому компоненту предоставлять данные всему дереву под ним.
@@ -17,12 +18,17 @@ https://reactdev-ru.pages.dev/learn/scaling-up-with-reducer-and-context/
 Создаем контекст.\
 Оборачиваем компоненты провайдером контекста, чтобы была возможность предоставить им данные контекста.\
 Компонент будет использовать значение ближайшего <MyContext.Provider> в дереве пользовательского интерфейса над ним.
+
 ## API
+- useContext - это хук React, который позволяет вам читать и подписываться на контекст из вашего компонента.
+-  Соответствующий <Context.Provider> должен находиться выше компонента, выполняющего вызов useContext().
 ```tsx
 // Создание контекста
 const MyContext = React.createContext(defaultValue);
 
-<MyContext.Provider value={/* некоторое значение */}>
+<MyContext.Provider value={/* некоторое значение */}/>
+
+const value = useContext(SomeContext);
 ```
 В React единственный способ переопределить какой-то контекст, идущий сверху, - это обернуть дочерние элементы в провайдер контекста с другим значением. 
 
