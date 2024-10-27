@@ -1,18 +1,19 @@
-
 import './App.css';
-import { PureFunction } from './base/PureFunction';
-import { Element } from './base/Element'
-import { State } from './base/State/State';
+import {PureFunction} from './base/PureFunction';
+import {Element} from './base/Element';
+import {State} from './base/State/State';
+import {EventHandler} from './base/EventHandler/EventHandler';
 
 function App() {
-  let example = <Element />
+	let example = <Element />;
 
-  example = <PureFunction />
-  
-  example = <State />
+	example = <PureFunction />;
 
-  
-  return example;
+	example = <EventHandler />;
+
+	example = <State />;
+
+	return example;
 }
 
 export default App;
