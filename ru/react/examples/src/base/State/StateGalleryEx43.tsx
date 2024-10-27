@@ -1,6 +1,9 @@
+import {useState} from 'react';
 import {sculptureList} from './common/data';
 
 export function StateGallery() {
+	const [state, setState] = useState(true);
+
 	console.log(`${StateGallery.name} rendered`);
 
 	let index = 0;
@@ -24,6 +27,14 @@ export function StateGallery() {
 			</h3>
 			<img src={sculpture.url} alt={sculpture.alt} />
 			<p>{sculpture.description}</p>
+			<button
+				onClick={() => {
+					// the local variable 'index' will be reset
+					setState(!state);
+				}}
+			>
+				render!
+			</button>
 		</>
 	);
 }
