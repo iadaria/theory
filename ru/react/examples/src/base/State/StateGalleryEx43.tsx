@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {sculptureList} from './common/data';
+import {sculptureList} from '../common/sculptureList';
 
 export function StateGallery() {
 	const [state, setState] = useState(true);
