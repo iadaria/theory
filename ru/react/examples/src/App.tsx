@@ -4,6 +4,7 @@ import {Element} from './base/Element';
 import {State} from './base/State/State';
 import {EventHandler} from './base/EventHandler/EventHandler';
 import {Render} from './base/Render/Render';
+import {Declarative} from './base/Declarative';
 
 function App() {
 	let example = null;
@@ -12,6 +13,7 @@ function App() {
 	example = <State />;
 	example = <Element />;
 	example = <Render />;
+	example = <Declarative />;
 	return example;
 }
 
