@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-export function TreeScoreboardRightOne() {
+export function TreeScoreboardRightFirst() {
 	const [isPlayerA, setIsPlayerA] = useState(true);
 	return (
 		<div>
