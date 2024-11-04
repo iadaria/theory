@@ -6,6 +6,7 @@ import {EventHandler} from './base/EventHandler/EventHandler';
 import {Render} from './base/Render/Render';
 import {Declarative} from './base/Declarative';
 import {Tree} from './base/Tree/Tree';
+import {Context} from './base/Context';
 
 function App() {
 	let example = null;
@@ -16,6 +17,7 @@ function App() {
 	example = <Render />;
 	example = <Declarative />;
 	example = <Tree />;
+	example = <Context />;
 	return example;
 }
 

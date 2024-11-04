@@ -1,8 +1,3 @@
-import Page from '../Context/Ex1_0_Page/Ex1_0_Page';
-import PageWithContext from '../Context/Ex1_0_Page/Ex1_0_PageWithContext';
-import PageWithContextTwo from '../Context/Ex1_0_Page/Ex1_0_PageWithContextTwo';
-import ContextTask from '../Context/task/ContextTask';
-import ContextTaskDone from '../Context/taskDone/ContextTaskDone';
 import {FormWithOriginStates} from './Ex0_10_Form';
 import {Ex0_11_Managed} from './Ex0_11_Managed';
 import {Lazy} from './Ex0_14_Lazy';
@@ -30,15 +25,6 @@ export function Element() {
 
 	example = <FixClock time={new Date()} />;
 
-	example = <Page />;
-
-	example = <PageWithContext />;
-
-	example = <PageWithContextTwo />;
-
-	example = <ContextTask />;
-
-	example = <ContextTaskDone />;
 	example = <Clock />;
 	return example;
 }
