@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import Heading from './common/Heading';
-import { LevelContext } from './common/LevelContext';
-
+import {LevelContext} from './common/LevelContext';
 
 function Section({children}: {children: React.ReactNode}) {
 	const level = useContext(LevelContext);
@@ -14,7 +13,7 @@ function Section({children}: {children: React.ReactNode}) {
 	);
 }
 
-export default function PageWithContextTwo() {
+export default function ContextPageTwo() {
 	return (
 		<Section>
 			<Heading>Title</Heading>
@@ -38,7 +37,7 @@ export default function PageWithContextTwo() {
 }
 
 /**
- * Теперь и Heading, и Section читают LevelContext, чтобы определить, 
- * насколько "глубоко" они находятся. А Section оборачивает свои 
+ * Теперь и Heading, и Section читают LevelContext, чтобы определить,
+ * насколько "глубоко" они находятся. А Section оборачивает свои
  * дочерние компоненты в LevelContext.
  */
