@@ -1,6 +1,7 @@
+import './referenceCatFriends.css';
 import {useRef} from 'react';
 
-export default function ReferenceCatFriends() {
+export function ReferenceCatFriends() {
 	const firstCatRef = useRef<any>(null);
 	const secondCatRef = useRef<any>(null);
 	const thirdCatRef = useRef<any>(null);

@@ -1,8 +1,12 @@
-import {useRef} from 'react';
+import {forwardRef, useRef} from 'react';
 
-function MyInput(props: any) {
+function MyInputWrong(props: any) {
 	return <input {...props} />;
 }
+
+const MyInput = forwardRef((props: any, ref) => {
+	return <input {...props} ref={ref} />;
+});
 
 export function ReferenceInput() {
 	const inputRef = useRef<HTMLInputElement>(null);
@@ -14,6 +18,9 @@ export function ReferenceInput() {
 
 	return (
 		<>
+			{/** Show an error in the console*/}
+			<MyInputWrong ref={inputRef} />
+			{/** It works good */}
 			<MyInput ref={inputRef} />
 			<button onClick={handleClick}>Focus the input</button>
 		</>
