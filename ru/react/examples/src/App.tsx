@@ -7,6 +7,7 @@ import {Render} from './base/Render/Render';
 import {Declarative} from './base/Declarative';
 import {Tree} from './base/Tree/Tree';
 import {Context} from './base/Context';
+import {Reference} from './base/Reference';
 
 function App() {
 	let example = null;
@@ -18,6 +19,7 @@ function App() {
 	example = <Declarative />;
 	example = <Tree />;
 	example = <Context />;
+	example = <Reference />;
 	return example;
 }
 

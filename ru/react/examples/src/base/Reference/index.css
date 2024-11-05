@@ -1,0 +1,35 @@
+body {
+	font-family: sans-serif;
+	margin: 20px;
+	padding: 0;
+	width: 500px;
+}
+
+ul {
+	padding-inline-start: 20px;
+}
+
+div {
+	width: 100%;
+	overflow: hidden;
+	scroll-behavior: auto;
+}
+
+nav {
+	text-align: center;
+}
+
+button {
+	margin: 0.25rem;
+}
+
+ul,
+li {
+	list-style: none;
+	white-space: nowrap;
+}
+
+li {
+	display: inline;
+	padding: 0.5rem;
+}
