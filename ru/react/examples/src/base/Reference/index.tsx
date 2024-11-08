@@ -1,5 +1,7 @@
+import {ReferenceWrongWorkWithDOM} from './ReferenceWrongWorkWithDOM';
 import {ReferenceCatFriends} from './ReferenceCatFriends';
 import {ReferenceCounter} from './ReferenceCounter';
+import {ReferenceFlashTodoList} from './ReferenceFlashTodoList';
 import {ReferenceForm} from './ReferenceForm';
 import {ReferenceImperativeInput} from './ReferenceImperativeInput';
 import {ReferenceInput} from './ReferenceInput';
@@ -15,6 +17,8 @@ export function Reference() {
 	example = <ReferenceInput />;
 	example = <ReferenceImperativeInput />;
 	example = <ReferenceTodoList />;
+	example = <ReferenceFlashTodoList />;
+	example = <ReferenceWrongWorkWithDOM />;
 
 	return example;
 }
