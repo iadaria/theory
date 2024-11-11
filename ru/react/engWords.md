@@ -13,3 +13,7 @@ component [kəmˈpəʊnənt]
 element [ˈelɪmənt]
 
 lifecycle /ˈlaɪf ˌsaɪ.kəl/
+
+side effect /saɪd ɪˈfekt/ побочные эффекты
+
+commit /kəˈmɪt/ фиксировать, совершить

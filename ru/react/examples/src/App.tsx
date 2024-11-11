@@ -8,6 +8,8 @@ import {Declarative} from './base/Declarative';
 import {Tree} from './base/Tree/Tree';
 import {Context} from './base/Context';
 import {Reference} from './base/Reference';
+import {Effect} from './base/Effect';
+import {Memo} from './base/Memo';
 
 function App() {
 	let example = null;
@@ -20,6 +22,8 @@ function App() {
 	example = <Tree />;
 	example = <Context />;
 	example = <Reference />;
+	example = <Effect />;
+	example = <Memo />;
 	return example;
 }
 
