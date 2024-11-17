@@ -22,8 +22,8 @@ function App() {
 	example = <Tree />;
 	example = <Context />;
 	example = <Reference />;
-	example = <Effect />;
 	example = <Memo />;
+	example = <Effect />;
 	return example;
 }
 

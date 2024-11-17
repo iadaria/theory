@@ -1,4 +1,6 @@
+import {EffectChatRoom} from './EffectChatRoom';
 import {EffectConnection} from './EffectConnection';
+import {EffectOnlineStatus} from './EffectOnlineStatus';
 import {EffectPlayground} from './EffectPlayground';
 import {EffectVideo} from './EffectVideo';
 import {EffectVideoDuringRender} from './EffectVideoDuringRender';
@@ -14,6 +16,7 @@ export function Effect() {
 	example = <EffectVideoWithText />;
 	example = <EffectPlayground />;
 	example = <EffectConnection />;
-
+	example = <EffectOnlineStatus />;
+	example = <EffectChatRoom />;
 	return example;
 }
